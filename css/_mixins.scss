@@ -1,0 +1,56 @@
+@mixin button {
+    button {
+
+        a {
+            color: #FEFEFE;
+        }
+        background:transparent;
+        border: none;
+        font-weight: 400;
+            font-size: 16px;
+            cursor: pointer;
+    }
+
+    .button-catalog {
+        width: 150px;
+        height: 45px;
+        background: #262626;
+        color: #FEFEFE;
+        img {
+            margin-left: 15px;
+        }
+        &:hover {
+            background-color: #000;
+          }
+    }
+    .button-reset{
+        width: 150px;
+        height: 45px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #000;
+
+    }
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin grid {
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+@mixin grid-gap {
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+@mixin cont {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
